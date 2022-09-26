@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-const MyProfile = () => {
-  return (
-    <div>MyProfile</div>
-  )
-}
+const MyProfile = () => (
+  <div><h1>My Profile is Under Construction</h1></div>
+);
 
-export default MyProfile
+export default MyProfile;

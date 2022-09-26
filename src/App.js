@@ -1,6 +1,6 @@
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Mission from './components/Mission';
 import Rockets from './components/Rockets';
 import MyProfile from './components/MyProfile';
@@ -8,18 +8,18 @@ import MyProfile from './components/MyProfile';
 function App() {
   return (
     <Router>
-    <div className="App">
-      <div className="nav">
-        <Navbar />
+      <div className="App">
+        <div className="nav">
+          <Navbar />
+        </div>
+        <section className="content">
+          <Routes>
+            <Route path="/Rockets" exact element={<Rockets />} />
+            <Route path="/Mission" element={<Mission />} />
+            <Route path="/MyProfile" element={<MyProfile />} />
+          </Routes>
+        </section>
       </div>
-      <section className="content">
-        <Routes>
-          <Route path="/" exact element={<Rockets />} />
-          <Route path="/Mission"  element={<Mission />} />
-          <Route path="/My Profile" element={<MyProfile />} />
-        </Routes>
-      </section>
-    </div>
     </Router>
   );
 }
