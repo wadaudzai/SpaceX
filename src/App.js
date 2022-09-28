@@ -2,8 +2,8 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Mission from './components/Mission';
-import Rockets from './components/Rockets';
 import MyProfile from './components/MyProfile';
+import MyRockets from './components/Rockets/rocket';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         </div>
         <section className="content">
           <Routes>
-            <Route path="/Rockets" exact element={<Rockets />} />
+            <Route path="/Rockets" exact element={<MyRockets />} />
             <Route path="/Mission" element={<Mission />} />
             <Route path="/MyProfile" element={<MyProfile />} />
           </Routes>
