@@ -1,0 +1,20 @@
+table {
+  width: 80%;
+  border-collapse: collapse;
+  border: 1px solid #000;
+  margin: 4rem auto;
+}
+
+table td {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+}
+
+table th {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
