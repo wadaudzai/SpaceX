@@ -5,6 +5,10 @@ import { ListGroup, Container } from 'react-bootstrap';
 const MyProfile = () => {
   const myRockets = useSelector((state) => state.rockets);
   const myReservedRockets = myRockets.filter((rocket) => rocket.reserved === true);
+
+  const missionsData = useSelector((state) => state.missions);
+  const reservedMissions = missionsData.filter((missions) => missions.reserved);
+
   return (
     <Container>
       <ListGroup className="w-25">
@@ -15,6 +19,20 @@ const MyProfile = () => {
             <ListGroup.Item key={rocket.id}>{rocket.name}</ListGroup.Item>
           ))
         )}
+      </ListGroup>
+      <ListGroup className="w-25">
+        <div className="missions">
+        <h2>My Missions</h2>
+        <div className="myProfile">
+          {
+            reservedMissions.map((missions) => (
+              <div key={missions.mission_id} className="myprofeach">
+                <p>{missions.mission_name}</p>
+              </div>
+            ))
+          }
+        </div>
+      </div>
       </ListGroup>
     </Container>
   );
