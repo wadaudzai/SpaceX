@@ -4,13 +4,17 @@ import { Container } from 'react-bootstrap';
 import RocketItemsList from './rocketList';
 import { fetchingRocketsInfo } from '../../features/Rockets/RocketSlice';
 
+let saveReserve = false;
 const MyRockets = () => {
   const rockets = useSelector((state) => state.rockets);
 
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchingRocketsInfo());
+    if (saveReserve === false) {
+      saveReserve = true;
+      dispatch(fetchingRocketsInfo());
+    }
   }, []);
 
   return (
