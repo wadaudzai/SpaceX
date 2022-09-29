@@ -6,14 +6,14 @@ import MyProfile from '../MyProfile';
 import store from '../../features/store';
 
 describe('Test for profile.', () => {
-    test('profile snapshot.', () => {
-        const profileTest = render(
-            <Provider store={store}>
-                <Router>
-                    <MyProfile />
-                </Router>
-            </Provider>
-        )
-        expect(profileTest).toMatchSnapshot();
-    })
-})
+  test('profile snapshot.', () => {
+    const profileTest = render(
+      <Provider store={store}>
+        <Router>
+          <MyProfile />
+        </Router>
+      </Provider>,
+    );
+    expect(profileTest).toMatchSnapshot();
+  });
+});

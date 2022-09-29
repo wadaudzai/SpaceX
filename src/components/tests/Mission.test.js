@@ -6,14 +6,14 @@ import Missions from '../Missions/Mission';
 import store from '../../features/store';
 
 describe('Test for missions.', () => {
-    test('Missions snapshot.', () => {
-        const missionTest = render(
-            <Provider store={store}>
-                <Router>
-                    <Missions />
-                </Router>
-            </Provider>
-        )
-        expect(missionTest).toMatchSnapshot();
-    })
-})
+  test('Missions snapshot.', () => {
+    const missionTest = render(
+      <Provider store={store}>
+        <Router>
+          <Missions />
+        </Router>
+      </Provider>,
+    );
+    expect(missionTest).toMatchSnapshot();
+  });
+});

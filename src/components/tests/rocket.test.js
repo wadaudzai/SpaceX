@@ -6,15 +6,14 @@ import MyRockets from '../Rockets/rocket';
 import store from '../../features/store';
 
 describe('Test for rockets.', () => {
-    test('Rockets snapshot.', () => {
-        const rocketTest = render(
-            <Provider store={store}>
-                <Router>
-                    <MyRockets />
-                </Router>
-            </Provider>
-        )
-        expect(rocketTest).toMatchSnapshot();
-    })
-})
-
+  test('Rockets snapshot.', () => {
+    const rocketTest = render(
+      <Provider store={store}>
+        <Router>
+          <MyRockets />
+        </Router>
+      </Provider>,
+    );
+    expect(rocketTest).toMatchSnapshot();
+  });
+});
