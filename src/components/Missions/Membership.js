@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import "./mission.style.css";
+import './mission.style.css';
 
 const Membership = (props) => {
   const { reserved } = props;

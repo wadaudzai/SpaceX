@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { join, leave } from '../../features/mission/missionSlice';
-import "./mission.style.css";
+import './mission.style.css';
 
 const Join = (props) => {
   const { reserved, id } = props;
