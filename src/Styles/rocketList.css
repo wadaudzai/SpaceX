@@ -26,7 +26,7 @@
 .btn-reserve {
   padding: 10px;
   color: #fff;
-  background-color: #0096FF;
+  background-color: #0096ff;
   border: #fff;
   border-radius: 3px;
 }
@@ -38,13 +38,13 @@
 }
 
 .btn-cancel:hover {
-    background-color: red;
-    color: #fff;
-    border: none;
-  }
+  background-color: red;
+  color: #fff;
+  border: none;
+}
 
 .reserved {
-  background-color: #088F8F;
+  background-color: #088f8f;
   padding: 5px;
   color: #fff;
   margin: 10px;
