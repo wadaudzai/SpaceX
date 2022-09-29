@@ -22,17 +22,17 @@ const MyProfile = () => {
       </ListGroup>
       <ListGroup className="w-25">
         <div className="missions">
-        <h2>My Missions</h2>
-        <div className="myProfile">
-          {
+          <h2>My Missions</h2>
+          <div className="myProfile">
+            {
             reservedMissions.map((missions) => (
               <div key={missions.mission_id} className="myprofeach">
                 <p>{missions.mission_name}</p>
               </div>
             ))
           }
+          </div>
         </div>
-      </div>
       </ListGroup>
     </Container>
   );
