@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes, { Object } from 'prop-types';
+import PropTypes from 'prop-types';
 import RocketCardItem from './rocketcard';
 import '../../Styles/rocketList.css';
 
@@ -18,7 +18,7 @@ RocketItemsList.defaultProps = {
 };
 
 RocketItemsList.propTypes = {
-  rockets: PropTypes.instanceOf(Object),
+  rockets: PropTypes.instanceOf(Array),
 };
 
 export default RocketItemsList;

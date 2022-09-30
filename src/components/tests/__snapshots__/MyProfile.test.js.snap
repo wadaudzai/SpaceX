@@ -5,41 +5,57 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
+      <section
         class="container"
       >
         <div
-          class="w-25 list-group"
+          class="rockets"
         >
           <h2>
             My Rockets
           </h2>
-          <p
-            class="text-danger"
-          >
-            You haven't select any rocket yet
-          </p>
+          <div
+            class="profile"
+          />
         </div>
-      </div>
+        <div
+          class="missions"
+        >
+          <h2>
+            My Missions
+          </h2>
+          <div
+            class="profile"
+          />
+        </div>
+      </section>
     </div>
   </body>,
   "container": <div>
-    <div
+    <section
       class="container"
     >
       <div
-        class="w-25 list-group"
+        class="rockets"
       >
         <h2>
           My Rockets
         </h2>
-        <p
-          class="text-danger"
-        >
-          You haven't select any rocket yet
-        </p>
+        <div
+          class="profile"
+        />
       </div>
-    </div>
+      <div
+        class="missions"
+      >
+        <h2>
+          My Missions
+        </h2>
+        <div
+          class="profile"
+        />
+      </div>
+    </section>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

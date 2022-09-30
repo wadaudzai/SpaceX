@@ -15,6 +15,7 @@ function App() {
         </div>
         <section className="content">
           <Routes>
+            <Route path="/" element={<MyRockets />} />
             <Route path="/Rockets" exact element={<MyRockets />} />
             <Route path="/Mission" element={<Mission />} />
             <Route path="/MyProfile" element={<MyProfile />} />

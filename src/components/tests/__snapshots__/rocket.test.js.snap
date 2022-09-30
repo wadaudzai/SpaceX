@@ -8,7 +8,9 @@ Object {
       <div
         class="container"
       >
-        <ul />
+        <ul
+          class="card-holder"
+        />
       </div>
     </div>
   </body>,
@@ -16,7 +18,9 @@ Object {
     <div
       class="container"
     >
-      <ul />
+      <ul
+        class="card-holder"
+      />
     </div>
   </div>,
   "debug": [Function],
