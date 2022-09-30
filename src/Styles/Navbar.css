@@ -32,3 +32,13 @@ ul li a:hover {
   border-bottom: 1px solid steelblue;
   color: steelblue;
 }
+
+.logo {
+  width: 10%;
+}
+
+.logo-holder {
+  display: flex;
+  gap: 8px;
+  margin: 0 0 0 1rem;
+}

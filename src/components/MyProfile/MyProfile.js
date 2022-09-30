@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { ListGroup, Container } from 'react-bootstrap';
+import './myProfile.style.css';
 
 const MyProfile = () => {
   const myRockets = useSelector((state) => state.rockets);
@@ -10,31 +10,30 @@ const MyProfile = () => {
   const reservedMissions = missionsData.filter((missions) => missions.reserved);
 
   return (
-    <Container>
-      <ListGroup className="w-25">
+    <section className="container">
+      <div className="rockets">
         <h2>My Rockets</h2>
-        {!myReservedRockets.length ? (<p className="text-danger">You haven&apos;t select any rocket yet</p>
-        ) : (
-          myReservedRockets.map((rocket) => (
-            <ListGroup.Item key={rocket.id}>{rocket.name}</ListGroup.Item>
-          ))
-        )}
-      </ListGroup>
-      <ListGroup className="w-25">
-        <div className="missions">
-          <h2>My Missions</h2>
-          <div className="myProfile">
-            {
-            reservedMissions.map((missions) => (
-              <div key={missions.mission_id} className="myprofeach">
-                <p>{missions.mission_name}</p>
+        <div className="profile">
+          {
+            myReservedRockets.map((rocket) => (
+              <div key={rocket.id} className="item">
+                <p>{rocket.name}</p>
               </div>
             ))
           }
-          </div>
         </div>
-      </ListGroup>
-    </Container>
+      </div>
+      <div className="missions">
+        <h2>My Missions</h2>
+        <div className="profile">
+          {reservedMissions.map((missions) => (
+            <div key={missions.mission_id} className="item">
+              <p>{missions.mission_name}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 };
 

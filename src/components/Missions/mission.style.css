@@ -1,8 +1,8 @@
 table {
-  width: 80%;
+  width: 90%;
   border-collapse: collapse;
   border: 1px solid #000;
-  margin: 4rem auto;
+  margin: 2rem auto;
 }
 
 table td {
@@ -17,4 +17,37 @@ table th {
   text-align: center;
   background-color: #000;
   color: #fff;
+}
+
+.leave {
+  color: red;
+  background-color: white;
+  border: 1px solid red;
+}
+
+.membershipActive {
+  color: white;
+  background-color: rgb(28, 179, 239);
+}
+
+.membershipActive,
+.notmember {
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.notmember {
+  background-color: darkgrey;
+  color: white;
+}
+
+.join {
+  padding: 5px 8px;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
